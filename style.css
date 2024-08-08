@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ruda:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+}
+#slidebar{
+    padding: 40px 0 0 24px;
+    width: 16%;
+    height: 100vh;
+    min-width: 180px;
+    border-right: 1px solid rgba(192, 190, 190, 0.831);
+}
+#slidebar>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#slidebar>ul>li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+}
+#main{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+    overflow-y: auto;
+    justify-content: center;
+    gap: 30px;
+}
+.main-left{
+    width: 670px;
+    height: 100%;
+}
+#story-section{
+    width: 100%;
+    overflow-x: hidden;
+    overflow-x: auto;
+    display: flex;
+    gap: 11px;
+    padding: 40px 0 0 16px;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+}
+.story-img{
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/profile_bg.svg);
+}
+.story>p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 72px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #262626;
+}
+.post-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.post{
+    width: 470px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(207, 205, 205);
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+}
+.post-header>.left{
+    display: flex;
+    align-items: center;
+}
+.post-header>.left>.profile-img{
+    width: 42px;
+    height: 42px;
+    background-image: url(/images/profile_bg.svg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+.post-header>.left>.profile-img>img{
+    width: 32px;
+}
+.post-header>.left>p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    padding: 0 5px;
+}
+.post-header>.left>span{
+    color: #8E8E8E;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 6px;
+}
+.post-header>img{
+    width: 24px;
+}
+.post-img{
+    position: relative;
+}
+.post-image{
+    position: relative;
+    width: 100%;
+}
+.slideindicater{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    left: 0;
+}
+.post-activity{
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+    justify-content: space-between;
+}
+.post-activity>.left{
+    display: flex;
+    gap: 16px;
+}
+.post>p{
+    font-size: 13px;
+    color: #262626;
+    font-weight: 600;
+    padding: 4px 0;
+}
+.post>p>span{
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+}
+.post>span{
+    font-size: 13px;
+    color: #8E8E8E;
+    font-weight: 400;
+    display: flex;
+    padding: 4px 0;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.comments>p{
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer{
+    width: 350px;
+    height: 100%;
+    padding: 40px 0 0 24px;
+}
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-header>a{
+    font-size: 11px;
+    font-weight: 600;
+    color: #0095F6;
+    text-decoration: none;
+}
+.footer-header>.left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.footer-header>.left>div>h1{
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    
+}
+.footer-header>.left>div>p{
+    font-size: 14px;
+    color: #8E8E8E;
+}
+.footer-header>.left>img{
+    width: 56px;
+}
+.suggestions-section{
+    padding: 16px 0 0 0;
+}
+.suggestions-header{
+    display: flex;
+    justify-content: space-between;
+}
+.suggestions-header>h1{
+    font-size: 14px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+.suggestions-header>p{
+    font-size: 11px;
+    font-weight: 600;
+    color: #262626;
+}
+.suggested-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0 0 0;
+}
+.suggested-profile>a{
+    font-size: 11px;
+    font-weight: 600;
+    color: #0095F6;
+    text-decoration: none;
+}
+.suggested-profile>.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.suggested-profile>.left>div>h1{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px 0;
+    color: #262626;
+    
+}
+.suggested-profile>.left>div>p{
+    font-size: 11px;
+    color: #8E8E8E;
+    padding: 2px 0;
+}
+.suggested-profile>.left>img{
+    width: 32px;
+}
+.footer{
+    margin-top: 24px;
+}
+.footer>ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.footer>ul>li{
+    padding-right: 14px;
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #C7C7C7;
+}
+.footer>p{
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #C7C7C7;
+    margin-top: 24px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    footer{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    #slidebar{
+        width: 10%;
+        min-width: 80px;
+    }
+    #slidebar>ul>li>p{
+        display: none;
+    }
+    #slidebar>.header>img{
+        display: none;
+    }
+    #main{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 780px) {
+    #slidebar{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        height: fit-content;
+        padding: 0;
+        z-index: 1;
+    }
+    #slidebar>ul{
+        flex-direction: row;
+        padding: 8px 0;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+    #slidebar>ul>li>p{
+        display: none;
+    }
+    #slidebar>.header>img{
+        display: none;
+    }
+    #main{
+        width: 100%;
+    }
+    .main-left{
+        width: 100%;
+    }
+    #story-section{
+        padding: 20px 16px 0 16px;
+    }
+}
+@media screen and (max-width: 500px){
+    .post{
+        width: 96%;
+    }
+}
